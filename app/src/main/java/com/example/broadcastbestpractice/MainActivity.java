@@ -2,6 +2,7 @@ package com.example.broadcastbestpractice;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 
@@ -24,6 +25,7 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.force_offline)
     public void onClick() {
         Intent intent = new Intent("com.example.broadcastbestpractice.FORCE_OFFLINE");
+        Log.d("qqqjjj","已发送强制下线广播");
         sendBroadcast(intent);
     }
 }
